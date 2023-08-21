@@ -17,14 +17,7 @@
 # and oldest tested versions of CMake. This will ensure
 # you pick up the best policies.
 
-# Keep minimum version in sync with:
-# https://github.com/uber/h3/blob/master/CMakeLists.txt
-cmake_minimum_required(VERSION 3.20..3.24)
-
-if(POLICY CMP0135)
-  # Set the timestamps of all extracted contents to the time of the extraction
-  cmake_policy(SET CMP0135 NEW)
-endif()
+cmake_minimum_required(VERSION 3.16)
 
 # This is your project statement. You should always list languages;
 # Listing the version is nice here since it sets lots of useful variables
